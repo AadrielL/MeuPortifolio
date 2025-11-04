@@ -100,6 +100,18 @@ section {
 .App main {
     padding-top: 70px;
 }
+/* src/App.css - Seção 2. HEADER E NAVEGAÇÃO */
+
+.main-header nav {
+    /* ... (resto do CSS) ... */
+    align-items: center; /* Garante que a foto e o texto fiquem alinhados */
+}
+
+.logo {
+   font-weight: bold;
+    color: #ecf0f1;
+}
+
 
 
 /* ========================================================= */
