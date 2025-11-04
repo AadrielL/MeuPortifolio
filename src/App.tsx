@@ -1,26 +1,26 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// IMPORTS CORRIGIDOS (SEM .tsx)
+import Header from './components/Header';
+import Apresentacao from './sections/Apresentacao';
+import Skills from './sections/Skills';
+import Projetos from './sections/Projetos';
+import Contato from './sections/Contato';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Tipagem de componente funcional sem props
+const App: React.FC = () => {
+    return (
+        <div className="App">
+            <Header />
+            <main>
+                {/* Usando "id" para navegação com react-scroll */}
+                <div id="apresentacao"><Apresentacao /></div>
+                <div id="skills"><Skills /></div>
+                <div id="projetos"><Projetos /></div>
+                <div id="contato"><Contato /></div>
+            </main>
+        </div>
+    );
 }
 
 export default App;

@@ -1,0 +1,66 @@
+// src/sections/Contato.tsx
+import React from 'react';
+import AnimatedSection from '../components/AnimatedSection';
+
+const Contato: React.FC = () => {
+    // Seus links sociais
+    const socialLinks = [
+        { name: 'GitHub', url: 'https://github.com/AadrielL' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/adrielmoraisdasilva' },
+    ];
+
+    return (
+        <section id="contato" className="contato-section">
+
+            {/* O conteúdo do contato é envolvido em uma div para ficar ao lado da foto */}
+            <div className="contato-content">
+                <AnimatedSection direction="down" delay={0.1}>
+                    <h2 className="section-title">Vamos Conversar!</h2>
+                </AnimatedSection>
+
+                <AnimatedSection direction="up" delay={0.3}>
+                    <p className="contato-text">
+                        Estou sempre aberto a desafios, aprendizados e oportunidades em soluções de tecnologia.
+                        Entre em contato através do email ou das minhas redes.
+                    </p>
+                </AnimatedSection>
+
+                <AnimatedSection direction="up" delay={0.6}>
+                    <p className="contato-email">
+                        Email: <a href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a>
+                    </p>
+                </AnimatedSection>
+
+                <div className="social-links">
+                    {socialLinks.map((link, index) => (
+                        <AnimatedSection
+                            key={link.name}
+                            direction="up"
+                            delay={0.8 + index * 0.1}
+                        >
+                            <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-link-button"
+                            >
+                                {link.name}
+                            </a>
+                        </AnimatedSection>
+                    ))}
+                </div>
+            </div>
+
+            {/* SLOT PARA A SUA FOTO */}
+            <div className="photo-slot">
+                {/* SUBSTITUA ESTE CONTEÚDO PELA SUA IMAGEM:
+                    Exemplo: <img src="/caminho/para/sua/foto.jpg" alt="Foto de Perfil do Adriel" />
+                */}
+                <p>Coloque sua foto aqui</p>
+            </div>
+
+        </section>
+    );
+};
+
+export default Contato;
