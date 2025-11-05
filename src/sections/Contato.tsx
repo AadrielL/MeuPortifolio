@@ -6,7 +6,7 @@ const Contato: React.FC = () => {
     // Seus links sociais
     const socialLinks = [
         { name: 'GitHub', url: 'https://github.com/AadrielL' },
-        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/adrielmoraisdasilva' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/adriel-morais-232031239/' },
     ];
 
     return (
@@ -27,7 +27,7 @@ const Contato: React.FC = () => {
 
                 <AnimatedSection direction="up" delay={0.6}>
                     <p className="contato-email">
-                        Email: <a href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a>
+                        Email: <a href="mailto:Adrie3lmorais@gmail.com">Adrie3lmorais@gmail.com</a>
                     </p>
                 </AnimatedSection>
 
