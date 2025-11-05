@@ -1,14 +1,13 @@
-// src/types/IContent.ts
+import React from 'react';
 
-// Define o conteúdo das páginas do FlipBook
-export interface IFlipPageContent {
+interface Project {
     id: number;
     title: string;
-    body: JSX.Element;
+    // Mude de JSX.Element para React.ReactNode (mais flexível)
+    body: React.ReactNode;
     isCover: boolean;
     themeClass: string;
 }
-
 // Define os dados para cada item da Galeria 3D
 export interface IPhotoItem {
     id: number;
