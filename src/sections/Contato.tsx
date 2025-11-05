@@ -12,7 +12,7 @@ const Contato: React.FC = () => {
     return (
         <section id="contato" className="contato-section">
 
-            {/* O conteúdo do contato é envolvido em uma div para ficar ao lado da foto */}
+
             <div className="contato-content">
                 <AnimatedSection direction="down" delay={0.1}>
                     <h2 className="section-title">Vamos Conversar!</h2>
@@ -28,7 +28,7 @@ const Contato: React.FC = () => {
                 <AnimatedSection direction="up" delay={0.6}>
                     <p className="contato-email">
                         Email: <a href="mailto:Adrie3lmorais@gmail.com">Adrie3lmorais@gmail.com</a>
-                        {/* ESTA LINHA FOI CORRIGIDA: AGORA MOSTRA SEU E-MAIL REAL E USA O PROTOCOLO mailto: */}
+
                     </p>
                 </AnimatedSection>
 
