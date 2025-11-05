@@ -3,10 +3,10 @@ import React from 'react';
 import AnimatedSection from '../components/AnimatedSection';
 
 const Contato: React.FC = () => {
-    // Seus links sociais
+    // SEUS LINKS SOCIAIS (GITHUB E LINKEDIN)
     const socialLinks = [
         { name: 'GitHub', url: 'https://github.com/AadrielL' },
-        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/adriel-morais-232031239/' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/adriel-morais-232031239/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BvYlDFZ3rT0ykZbRq3L0QjQ%3D%3D/' },
     ];
 
     return (
@@ -28,6 +28,7 @@ const Contato: React.FC = () => {
                 <AnimatedSection direction="up" delay={0.6}>
                     <p className="contato-email">
                         Email: <a href="mailto:Adrie3lmorais@gmail.com">Adrie3lmorais@gmail.com</a>
+                        {/* ESTA LINHA FOI CORRIGIDA: AGORA MOSTRA SEU E-MAIL REAL E USA O PROTOCOLO mailto: */}
                     </p>
                 </AnimatedSection>
 
