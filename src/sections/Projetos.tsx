@@ -28,6 +28,13 @@ const projectData: Project[] = [
         direction: 'right'
     },
     {
+        title: 'StepByMath — Tutor Interativo de Cálculo 1 (GenAI)',
+        description: 'Tutor educacional em Python e Streamlit integrado à API do Gemini (google-genai) com engenharia de prompts socrática passo a passo, renderização em LaTeX e gráficos dinâmicos de funções e primitivas com Plotly.',
+        link: 'https://github.com/AadrielL/stepbymath',
+        tech: ['Python', 'Streamlit', 'Gemini API', 'Prompt Engineering', 'Plotly'],
+        direction: 'left'
+    },
+    {
         title: 'Animelist - Catálogo Pessoal de Animes',
         description: 'Projeto Full-Stack com Back-end robusto em Java e Spring Boot (incluindo Web Security e Versionamento) e Front-end em React. Utiliza PostgreSQL para banco de dados.',
         link: 'https://seusanimeslist-frontend.onrender.com',
