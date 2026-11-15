@@ -15,15 +15,16 @@ const Apresentacao: React.FC = () => {
 
                 {/* Animação do título, vindo da direita */}
                 <AnimatedSection direction="right" delay={0.5} amount={0.8}>
-                    <h2 className="sub-title">Desenvolvedor Full-Stack | Soluções em Tecnologia</h2>
+                    <h2 className="sub-title">Desenvolvedor Full-Stack &amp; IA Generativa</h2>
                 </AnimatedSection>
 
                 {/* Animação do texto de background, vindo de baixo */}
                 <AnimatedSection direction="up" delay={0.8} amount={0.5}>
                     <p className="background-text">
-                        22 anos. Estudante de Análise e Desenvolvimento de Sistemas (1º período)
-                        e Técnico em Automação Industrial. Meu foco é na utilização de tecnologias
-                        (Java, React, Node.js, Spring) para criar soluções eficientes e facilitar processos.
+                        Graduando em Inteligência Artificial (UFT) e Sistemas de Informação (Anhanguera),
+                        atuo no desenvolvimento de agentes autônomos (ReAct / LLMs), APIs e microsserviços
+                        escaláveis em Python (FastAPI), Java (Spring Boot), React/Ionic e Angular, integrando
+                        engenharia de software, dados e IA Generativa aplicada.
                     </p>
                 </AnimatedSection>
 
