@@ -6,28 +6,29 @@ import AnimatedSection from '../components/AnimatedSection';
 // Tipagem para os dados de cada Skill
 interface Skill {
     name: string;
-    category: 'Backend' | 'Frontend' | 'Database' | 'DevOps' | 'Versionamento' | 'Outros'; // Adicionado "Outros" para ter 6 categorias
+    category: 'IA Generativa & Dados' | 'Backend' | 'Frontend' | 'Database' | 'DevOps' | 'Versionamento';
 }
 
-// Seus dados de Habilidades (Adicione uma sexta categoria para teste)
+// Seus dados de Habilidades
 const hardSkills: Skill[] = [
-    { name: 'Java', category: 'Backend' },
-    { name: 'Spring Boot (Web/Security)', category: 'Backend' },
+    { name: 'Agentes ReAct & Prompt Engineering', category: 'IA Generativa & Dados' },
+    { name: 'Gemini API, Ollama (SLMs) & Guardrails', category: 'IA Generativa & Dados' },
+    { name: 'Pandas, NumPy & Power BI', category: 'IA Generativa & Dados' },
+    { name: 'Python (FastAPI)', category: 'Backend' },
+    { name: 'Java & Spring Boot (Web/Security)', category: 'Backend' },
     { name: 'Node.js', category: 'Backend' },
-    { name: 'React', category: 'Frontend' },
-    { name: 'JavaScript / TypeScript', category: 'Frontend' },
+    { name: 'React & Ionic (Mobile-First)', category: 'Frontend' },
+    { name: 'Angular & TypeScript', category: 'Frontend' },
     { name: 'HTML5 / CSS3', category: 'Frontend' },
-    { name: 'PostgreSQL', category: 'Database' },
-    { name: 'Git & GitHub/GitLab', category: 'Versionamento' },
-    { name: 'Deploy (Render, etc.)', category: 'DevOps' },
-    // Exemplo para completar as 6 categorias:
-    { name: 'Automação Industrial', category: 'Outros' },
+    { name: 'PostgreSQL, SQL Server & SQLite', category: 'Database' },
+    { name: 'Docker & Docker Compose', category: 'DevOps' },
+    { name: 'Linux & Deploy (Render / VPS)', category: 'DevOps' },
+    { name: 'Git, GitHub/GitLab & Pull Requests', category: 'Versionamento' },
 ];
 
 // Função auxiliar para agrupar as skills por categoria (mantida)
 const groupSkillsByCategory = (skills: Skill[]) => {
-    // Usamos um array predefinido para garantir a ordem (e que são 6)
-    const predefinedOrder: Skill['category'][] = ['Frontend', 'Backend', 'Database', 'Versionamento', 'DevOps', 'Outros'];
+    const predefinedOrder: Skill['category'][] = ['IA Generativa & Dados', 'Frontend', 'Backend', 'Database', 'DevOps', 'Versionamento'];
 
     const grouped = skills.reduce((acc, skill) => {
         if (!acc[skill.category]) {
@@ -82,8 +83,8 @@ const Skills: React.FC = () => {
 
             <AnimatedSection direction="up" delay={0.2 + 6 * 0.15 + 0.5}>
                 <p className="learning-note">
-                    Em constante aprendizado em Análise de Sistemas e aprofundando em automação industrial,
-                    sempre buscando a otimização de processos e a excelência em código.
+                    Em constante evolução em Inteligência Artificial (UFT) e Sistemas de Informação,
+                    unindo engenharia de software, microsserviços e IA Generativa para resolver problemas reais.
                 </p>
             </AnimatedSection>
 
