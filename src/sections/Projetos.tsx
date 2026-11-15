@@ -37,7 +37,7 @@ const projectData: Project[] = [
     {
         title: 'Animelist - Catálogo Pessoal de Animes',
         description: 'Projeto Full-Stack com Back-end robusto em Java e Spring Boot (incluindo Web Security e Versionamento) e Front-end em React. Utiliza PostgreSQL para banco de dados.',
-        link: 'https://seusanimeslist-frontend.onrender.com',
+        link: 'https://bit.ly/seuanimelist',
         tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Web Security'],
         direction: 'left' // Anima da esquerda
     },
