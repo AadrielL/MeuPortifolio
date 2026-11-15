@@ -39,13 +39,6 @@ const projectData: Project[] = [
         description: 'Projeto Full-Stack com Back-end robusto em Java e Spring Boot (incluindo Web Security e Versionamento) e Front-end em React. Utiliza PostgreSQL para banco de dados.',
         link: 'https://bit.ly/seuanimelist',
         tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Web Security'],
-        direction: 'left' // Anima da esquerda
-    },
-    {
-        title: 'Landing Page + Orçamento Inteligente (Serviços Elétricos)',
-        description: 'Landing page e gerador de orçamentos para cliente autônomo. Implementação complexa em React que calcula valores com base em m² da casa, pontos de elétrica/CFTV e valor de distância/combustível via CEP.',
-        link: 'https://servi-oseletricos.onrender.com',
-        tech: ['React', 'Node.js', 'Lógica de Negócios', 'APIs de Terceiros'],
         direction: 'right' // Anima da direita
     }
 ];
