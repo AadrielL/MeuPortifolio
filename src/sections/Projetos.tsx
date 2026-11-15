@@ -14,6 +14,20 @@ interface Project {
 // 2. Dados de seus Projetos
 const projectData: Project[] = [
     {
+        title: 'Agente Educacional Autônomo (GenAI / ReAct — OULAD)',
+        description: 'Agente analítico em Python, FastAPI e React utilizando padrão ReAct com ferramentas determinísticas em Pandas, ContextGuard (anti-prompt injection), rotação de chaves Gemini, suporte 100% local via Ollama e benchmark de hardware em tempo real.',
+        link: 'https://github.com/AadrielL',
+        tech: ['Python', 'FastAPI', 'GenAI / ReAct', 'Ollama', 'Pandas', 'React'],
+        direction: 'left'
+    },
+    {
+        title: 'Ecossistema SaaS Multi-Tenant MyGo (Mobile & Web)',
+        description: 'Arquitetura distribuída com 3 microsserviços em Java Spring Boot (Auth, Calculadora e Materiais), app Mobile-First em React + Ionic e painel Web em Angular, orquestrados com Docker Compose e PostgreSQL.',
+        link: 'https://github.com/AadrielL/mobile-mygo',
+        tech: ['Java', 'Spring Boot', 'React + Ionic', 'Angular', 'Docker', 'PostgreSQL'],
+        direction: 'right'
+    },
+    {
         title: 'Animelist - Catálogo Pessoal de Animes',
         description: 'Projeto Full-Stack com Back-end robusto em Java e Spring Boot (incluindo Web Security e Versionamento) e Front-end em React. Utiliza PostgreSQL para banco de dados.',
         link: 'https://seusanimeslist-frontend.onrender.com',
